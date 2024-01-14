@@ -13,7 +13,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    func makePOSTAPICall() {
+        guard let url = URL(string: "https://httpbin.org/post") else {
+            print("Error")
+            return
+        }
+    }
+    
+    
 }
 
